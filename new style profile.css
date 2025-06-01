@@ -1,26 +1,6 @@
-.theme-entry input[type="text"],
-.theme-entry input[type="email"],
-.theme-entry input[type="password"],
-.theme-entry select,
-.theme-entry textarea {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1.5px solid #ccc;
-    border-radius: 20px;  /* Rounded corners */
-    font-size: 14px;
-    color: #444;
-    background-color: #fff;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 15px;
-}
-
-.theme-entry input[type="text"]:focus,
-.theme-entry input[type="email"]:focus,
-.theme-entry input[type="password"]:focus,
-.theme-entry select:focus,
-.theme-entry textarea:focus {
-    border-color: #0078d7;  /* Blue border on focus */
-    box-shadow: 0 0 6px rgba(0, 120, 215, 0.3);
-    outline: none;
-}
+html .theme-entry {
+                                font-size: 10px;
+                                }
+                                .theme-entry h1 {
+                                font-size: 20px;
+                    }
