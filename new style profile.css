@@ -1,31 +1,23 @@
-/* ===== Modern Clean Style for Nintex K2 Five ===== */
-
-/* Root variables for colors and fonts */
-:root {
-    --primary-color: #0078d7;
-    --secondary-color: #005a9e;
-    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+/* ===== K2 Theme Entry: Modern Clean Style ===== */
 
 /* Base font and background */
 .theme-entry body,
 .theme-entry .k2-form {
-    font-family: var(--font-family);
-    background-color: #f4f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
     color: #333333;
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
-/* Form container styling with glassmorphism */
+/* Form container styling */
 .theme-entry .k2-form-container {
     max-width: 700px;
     margin: 25px auto;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
+    background: #ffffff;
     padding: 30px 40px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 }
 
@@ -56,29 +48,29 @@
     margin-bottom: 15px;
 }
 
-/* Input focus */
 .theme-entry input[type="text"]:focus,
 .theme-entry input[type="email"]:focus,
 .theme-entry input[type="password"]:focus,
 .theme-entry select:focus,
 .theme-entry textarea:focus {
-    border-color: var(--primary-color);
-    box-shadow: 0 0 8px rgba(0, 120, 215, 0.2);
+    border-color: #0078d7;
+    /* K2 Blue */
+    box-shadow: 0 0 6px rgba(0, 120, 215, 0.3);
     outline: none;
 }
 
 /* Buttons */
 .theme-entry button.k2-button,
 .theme-entry input[type="submit"].k2-button {
-    background-color: var(--primary-color);
+    background-color: #0078d7;
     color: #ffffff;
     padding: 14px 28px;
     font-weight: 700;
     font-size: 15px;
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.25s ease;
     margin-top: 10px;
     display: inline-block;
     box-sizing: border-box;
@@ -86,14 +78,14 @@
 
 .theme-entry button.k2-button:hover,
 .theme-entry input[type="submit"].k2-button:hover {
-    background-color: var(--secondary-color);
+    background-color: #005a9e;
 }
 
 /* Validation messages */
 .theme-entry .k2-validation-message {
     color: #e03e2f;
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 13px;
+    margin-top: -10px;
     margin-bottom: 10px;
     display: block;
 }
@@ -101,7 +93,7 @@
 /* Checkbox and radio buttons */
 .theme-entry input[type="checkbox"],
 .theme-entry input[type="radio"] {
-    accent-color: var(--primary-color);
+    accent-color: #0078d7;
     width: 18px;
     height: 18px;
     margin-right: 8px;
@@ -109,17 +101,9 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .theme-entry .k2-form-container {
         padding: 20px;
         margin: 15px;
-    }
-
-    .theme-entry input[type="text"],
-    .theme-entry input[type="email"],
-    .theme-entry input[type="password"],
-    .theme-entry select,
-    .theme-entry textarea {
-        padding: 12px;
     }
 }
