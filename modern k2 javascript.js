@@ -1,32 +1,30 @@
-// modern-style-profile.js
+// Wait until DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  // Find button to toggle slide-out blade - make sure your form has a button with ID 'open-blade-btn'
+  const openBladeBtn = document.getElementById('open-blade-btn');
+  const slideOutBlade = document.querySelector('.slide-out-blade');
+  const closeBtn = document.querySelector('.slide-out-blade .close-btn');
 
-document.addEventListener("DOMContentLoaded", function() {
-  const inputs = document.querySelectorAll('.theme-entry input, .theme-entry select, .theme-entry textarea');
+  if (!openBladeBtn || !slideOutBlade || !closeBtn) return;
 
-  inputs.forEach(input => {
-    input.addEventListener('focus', () => {
-      input.style.transition = 'box-shadow 0.3s ease';
-      input.style.boxShadow = '0 0 8px rgba(0, 120, 215, 0.4)';
-    });
-
-    input.addEventListener('blur', () => {
-      input.style.boxShadow = 'none';
-    });
+  // Open blade on button click
+  openBladeBtn.addEventListener('click', () => {
+    slideOutBlade.classList.add('active');
   });
 
-  const buttons = document.querySelectorAll('.theme-entry button.k2-button, .theme-entry input[type="submit"].k2-button');
+  // Close blade on close button click
+  closeBtn.addEventListener('click', () => {
+    slideOutBlade.classList.remove('active');
+  });
 
-  buttons.forEach(button => {
-    button.addEventListener('mousedown', () => {
-      button.style.transform = 'scale(0.98)';
-    });
-
-    button.addEventListener('mouseup', () => {
-      button.style.transform = 'scale(1)';
-    });
-
-    button.addEventListener('mouseleave', () => {
-      button.style.transform = 'scale(1)';
-    });
+  // Optional: close blade if user clicks outside blade area
+  document.addEventListener('click', (e) => {
+    if (
+      slideOutBlade.classList.contains('active') &&
+      !slideOutBlade.contains(e.target) &&
+      e.target !== openBladeBtn
+    ) {
+      slideOutBlade.classList.remove('active');
+    }
   });
 });
