@@ -1,8 +1,7 @@
-/* Custom styling for K2 form */
+/* Simple test CSS */
 .theme-entry input[type="text"] {
   background-color: yellow !important;
+  border: 2px solid red !important;
   border-radius: 10px !important;
-  border: 2px solid #0078d7 !important;
   font-size: 16px !important;
-  padding: 10px !important;
 }
