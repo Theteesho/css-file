@@ -1,7 +1,151 @@
-/* Simple test CSS */
-.theme-entry input[type="text"] {
-  background-color: yellow !important;
-  border: 2px solid red !important;
-  border-radius: 10px !important;
-  font-size: 16px !important;
+/* Apply all styling under the form theme wrapper */
+.nx-theme-styles .nx-theme-form {
+  --primary-color: #005a9e;
+  --secondary-color: #003f6b;
+  --error-color: #d93025;
+  --success-color: #188038;
+  --background-color: #f9f9f9;
+  --input-bg: #fff;
+  --input-border: #ccc;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--background-color);
+  color: #333;
+}
+
+/* Page-level styling */
+.nx-theme-styles .nx-theme-page {
+  margin: 10px auto;
+  max-width: 1000px;
+}
+
+/* General form-group wrapper around each control */
+.nx-theme-styles .nx-theme-form .form-group {
+  margin-bottom: 20px;
+}
+
+/* Control labels */
+.nx-theme-styles .nx-theme-form .nx-theme-label-1 {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+  color: #222;
+}
+
+/* Text inputs, date, number, email, multiline, currency, etc. */
+.nx-theme-styles .nx-theme-form .nx-theme-input-1 {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  padding: 8px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+.nx-theme-styles .nx-theme-form .nx-theme-input-1:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 90, 158, 0.3);
+}
+
+/* Dropdowns, people-picker, lookups */
+.nx-theme-styles .nx-theme-form select,
+.nx-theme-styles .nx-theme-form .select-box,
+.nx-theme-styles .nx-theme-form .input-control.select-box {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+/* Toggle / boolean controls */
+.nx-theme-styles .nx-theme-form .nx-theme-boolean {
+  padding-left: 0;
+}
+
+/* Buttons */
+.nx-theme-styles .nx-theme-form .nx-theme-button-1,
+.nx-theme-styles .nx-theme-form .nx-theme-button-2 {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.2s;
+}
+.nx-theme-styles .nx-theme-form .nx-theme-button-1:hover,
+.nx-theme-styles .nx-theme-form .nx-theme-button-2:hover {
+  background: var(--secondary-color);
+}
+
+/* Error & validation messages */
+.nx-theme-styles .nx-theme-form .validation-message,
+.nx-theme-styles .nx-theme-form .nx-theme-error {
+  color: var(--error-color);
+  margin-top: 4px;
+  font-size: 0.9em;
+}
+
+/* Success messages */
+.nx-theme-styles .nx-theme-form .nx-theme-success {
+  color: var(--success-color);
+}
+
+/* Repeating sections container */
+.nx-theme-styles .nx-theme-form .nx-repeating-section-container {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px dashed var(--input-border);
+  background: #fafafa;
+}
+
+/* Tables or list views */
+.nx-theme-styles .nx-theme-form table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+.nx-theme-styles .nx-theme-form th,
+.nx-theme-styles .nx-theme-form td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+.nx-theme-styles .nx-theme-form th {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* Rich text / labels */
+.nx-theme-styles .nx-theme-form ntx-richtext-label * {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* DatePicker calendar override */
+.nx-theme-styles .ui-datepicker,
+.nx-theme-styles .ui-datepicker-header {
+  background: #fff;
+  border: 1px solid var(--input-border);
+}
+
+/* File upload element */
+.nx-theme-styles .nx-theme-form .input-control.file-upload {
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  padding: 6px;
+}
+
+/* Responsive layout tweaks */
+@media screen and (max-width: 600px) {
+  .nx-theme-styles .nx-theme-form {
+    padding: 15px;
+  }
+  .nx-theme-styles .nx-theme-form .nx-theme-button-1,
+  .nx-theme-styles .nx-theme-form .nx-theme-button-2 {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
