@@ -1,4 +1,6 @@
 .theme-entry * { --main-font-family: "Comic Sans MS" !important;}
+
+.theme-entry * { --button-rounding: 20px !important; --button-font-family: "Comic Sans MS" !important; }
 .theme-entry .form {
 	padding         : 12px;
 	background-color: transparent;
