@@ -1,3 +1,4 @@
+.theme-entry * { --main-font-family: "Comic Sans MS" !important;}
 .theme-entry .form {
 	padding         : 12px;
 	background-color: transparent;
