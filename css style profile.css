@@ -1,32 +1,32 @@
 .theme-entry .form {
-	padding         : 12px;
+	padding         : 5px;
 	background-color: transparent;
 }
 
 .theme-entry .tab-box .tab-box-body {
 	background-color: transparent;
-	margin-top      : 25px;
+	margin-top      : 15px;
 }
 
 .theme-entry .tab-box.tabs-top ul.tab-box-tabs {
 	white-space  : nowrap;
 	display      : table;
 	table-layout : fixed;
-	width        : 100%;
-	height       : 55px;
+	width        : 50%;
+	height       : 25px;
 	left         : unset;
 	right        : unset;
 	margin-left  : unset;
 	margin-right : unset;
 	border-bottom: none;
 	border-top   : none;
-	margin-top   : 25px;
+	margin-top   : 15px;
 }
 
 .theme-entry .tab-box ul.tab-box-tabs li {
 	display   : table-cell;
 	text-align: center;
-	height    : 100%;
+	height    : 60%;
 }
 
 .theme-entry .tab-box ul.tab-box-tabs li a.tab {
@@ -43,7 +43,7 @@ html .theme-entry .tab-box ul.tab-box-tabs a.selected.tab .tab-wrapper {
 .theme-entry .tab-box ul.tab-box-tabs li a.tab,
 .theme-entry .tab-box ul.tab-box-tabs li a.tab .tab-wrapper {
 	display          : block;
-	height           : 56px;
+	height           : 26px;
 	padding          : 0px;
 	cursor           : default;
 	/* vertical-align: bottom; */
