@@ -1,3 +1,8 @@
 .theme-entry * {
   --main-font-family: "Plus Jakarta Sans", sans-serif !important;
 }
+.theme-entry * { --button-rounding: 20px !important; --button-font-family: "Plus Jakarta Sans", sans-serif !important; }
+.theme-entry .form {
+	padding         : 12px;
+	background-color: transparent;
+}
